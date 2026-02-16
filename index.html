@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcade Universe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Arcade Universe</h1>
+    <p>Choose a game from the menu and start playing.</p>
+  </header>
+
+  <main class="layout">
+    <aside class="menu-panel">
+      <h2>Game Menu</h2>
+      <ul id="gameMenu" class="game-menu"></ul>
+      <button id="backToMenu" class="secondary hidden">Back to Menu</button>
+    </aside>
+
+    <section id="gameContainer" class="game-container">
+      <div id="menuWelcome" class="welcome-card">
+        <h2>Pick a Game</h2>
+        <p>
+          Includes:
+          Hangman, Smart Tic-Tac-Toe, Math Battle,
+          Maze Escape, Brick Breaker Deluxe, and Top-Down Car Racing.
+        </p>
+      </div>
+
+      <section id="hangman" class="game-panel hidden"></section>
+      <section id="tictactoe" class="game-panel hidden"></section>
+      <section id="mathbattle" class="game-panel hidden"></section>
+      <section id="maze" class="game-panel hidden"></section>
+      <section id="brick" class="game-panel hidden"></section>
+      <section id="racing" class="game-panel hidden"></section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
